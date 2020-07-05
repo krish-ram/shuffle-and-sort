@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #fff;
+}
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 5px;
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  min-width: 100px;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #2b8ead;
+  border-color: #2b8ead;
+}
+
+.btn-primary,
+.btn:focus {
+  color: white;
+  background-color: #72c3dc;
+  border: #72c3dc;
+  border-radius: 5px;
+  box-shadow: 0px 3px #2b8ead;
+}
+
+.numbers div {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4em;
+}
+
+.number-1,
+.number-8 {
+  background: #6f98a8;
+}
+
+.number-2,
+.number-4 {
+  background: #2b8ead;
+}
+
+.number-3,
+.number-5,
+.number-9 {
+  background: #2f454e;
+}
+
+.number-6,
+.number-7 {
+  background: #bfbfbf;
+}
+
+@media screen and (max-width: 500px) {
+  html,
+  body {
+    background-color: #fff;
+  }
+
+  .container {
+    border: 7px solid black;
+  }
+  header {
+    background-color: #333333;
+    color: white;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+  .buttons {
+    justify-content: center;
+    display: flex;
+  }
+  .btn {
+    display: inline;
+    padding: 10px;
+  }
+
+  .numbers {
+    grid-template-columns: auto;
+    width: auto;
+  }
+
+  .numbers div {
+    min-height: 50px;
+    color: #000;
+    font-size: 1em;
+    background-color: #efefef;
+    border-radius: 3px;
+    margin: 3px;
+  }
+
+  .number-1,
+  .number-8 {
+    border-left: 5px solid #6f98a8;
+  }
+
+  .number-2,
+  .number-4 {
+    border-left: 5px solid #2b8ead;
+  }
+
+  .number-3,
+  .number-5,
+  .number-9 {
+    border-left: 5px solid #2f454e;
+  }
+
+  .number-6,
+  .number-7 {
+    border-left: 5px solid #bfbfbf;
+  }
+}
